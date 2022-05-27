@@ -8,7 +8,7 @@ import SpotifyWebApi from "spotify-web-api-js";
 
 function Body({ spotifyApi, chooseTrack } : {spotifyApi: any, chooseTrack: any}) {
     const { data: session } = useSession();
-    const { accessToken } = session;
+    const accessToken: any  = session;
     const [search, setSearch] = useState("");
     const [searchResults, setSearchResults] = useState([]);
     const [newReleases, setNewReleases] = useState([]);
